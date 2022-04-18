@@ -1,5 +1,3 @@
-import {v4} from 'uuid';
-
 export default class SemanticFunctions {
     options = [
         {type: "По умолчанию", value: "O"},

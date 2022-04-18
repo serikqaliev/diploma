@@ -1,5 +1,3 @@
-import {v4} from 'uuid';
-
 export default class SyntaxFunctions {
     options = [
         { type: "–", value: 0 },
@@ -9,17 +7,6 @@ export default class SyntaxFunctions {
         { type: "ҚА", value: 4 },
         { type: "ЖА", value: 5 },
     ];
-
-    uniqueKeys(length) {
-        const matrix = [];
-        for (let i = 0; i < length; i++) {
-            matrix[i] = [];
-            for (let j = 0; j < length; j++) {
-                console.log(v4());
-            }
-        }
-        return matrix;
-    }
 
     changeColors(value) {
         let currentColor = "";
@@ -69,9 +56,5 @@ export default class SyntaxFunctions {
         }
         console.log(matrix);
         return matrix;
-    }
-
-    getColor(rowIndex, colIndex) {
-
     }
 }

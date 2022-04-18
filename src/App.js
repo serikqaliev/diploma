@@ -6,7 +6,6 @@ import SpinnerLoading from "./components/SpinnerLoading";
 import LoginForm from "./pages/Login/LoginPage";
 import NavBar from "./components/NavBar";
 import {useRoutes} from "./routes";
-import NotActivated from "./pages/NotActivated";
 
 function App() {
     const {authStore} = useContext(AuthContext);
