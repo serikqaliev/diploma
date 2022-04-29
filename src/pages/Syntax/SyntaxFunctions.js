@@ -54,7 +54,6 @@ export default class SyntaxFunctions {
                 matrix[i][j] = "white";
             }
         }
-        console.log(matrix);
         return matrix;
     }
 }

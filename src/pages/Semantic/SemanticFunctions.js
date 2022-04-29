@@ -10,7 +10,7 @@ export default class SemanticFunctions {
         {type: "Объект", value: "OBJ"},
         {type: "Получатель", value: "REC"},
         {type: "Адресат", value: "DES"},
-        {type: "Место", value: "IOC"},
+        {type: "Место", value: "LOC"},
         {type: "Средство", value: "MEA"},
         {type: "Инструмент", value: "INR"},
         {type: "Состав", value: "COM"},
@@ -57,7 +57,7 @@ export default class SemanticFunctions {
             case "DES":
                 currentColor = "aqua";
                 break;
-            case "IOC":
+            case "LOC":
                 currentColor = "teal";
                 break;
             case "MEA":

@@ -38,7 +38,7 @@ export default class AuthStore {
         this.setLoading(true);
         try {
             const response = await AuthService.login(email, password);
-            console.log(response);
+            console.log("login response" + response);
             localStorage.setItem("token", response.data.accessToken);
             this.setAuth(true);
             this.setUser(response.data.user);
@@ -53,7 +53,7 @@ export default class AuthStore {
         this.setLoading(true);
         try {
             const response = await AuthService.registration(email, password);
-            console.log(response);
+            console.log("registration response" + response);
             localStorage.setItem("token", response.data.accessToken);
             this.setAuth(true);
             this.setUser(response.data.user);
@@ -67,7 +67,7 @@ export default class AuthStore {
     async logout() {
         try {
             const response = await AuthService.logout();
-            console.log(response);
+            console.log("logout response" + response);
             localStorage.removeItem("token");
             this.setAuth(false);
             this.setUser({});
@@ -80,7 +80,7 @@ export default class AuthStore {
         this.setLoading(true);
         try {
             const response = await axios.get(`${API_URL}/user/refresh`, {withCredentials: true,});
-            console.log(response);
+            console.log("check auth response" + response);
             localStorage.setItem("token", response.data.accessToken);
             this.setAuth(true);
             this.setUser(response.data.user);
@@ -94,6 +94,6 @@ export default class AuthStore {
     errorToggle(message) {
         this.setError(true);
         this.setMessage(message);
-        console.log(message);
+        console.log("error message from error toggle" + message);
     }
 }

@@ -52,7 +52,7 @@ const SemanticCard = () => {
 
     const sendHandler = async () => {
         try {
-            console.log(id);
+            console.log("send handler id: " + id);
             await SemanticService.postMarkedSemantic(words, semanticTags, id);
             history("/semantic", {replace: true});
         } catch (error) {

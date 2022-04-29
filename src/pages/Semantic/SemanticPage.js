@@ -18,7 +18,6 @@ const SyntaxPage = () => {
             setIsLoading(true);
             const response = await SemanticService.fetchSemantic();
             setSentences(response.data);
-            console.log(response.data);
             setIsLoading(false);
         }
         void fetchData();
@@ -43,7 +42,7 @@ const SyntaxPage = () => {
 
     return (
         <Container className="mt-3">
-            <h1>Семантическая разметка</h1>
+            <h1>Семантикалық таңбалау</h1>
             <Sentences sentences={currentSentence} type="semantic"/>
             <PaginationComponent
                 sentencesPerPage={sentencesPerPage}

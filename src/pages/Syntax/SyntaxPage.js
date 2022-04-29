@@ -18,7 +18,6 @@ const SyntaxPage = () => {
             setIsLoading(true);
             const response = await SyntaxService.fetchSyntax();
             setSentences(response.data);
-            console.log(response.data);
             setIsLoading(false);
         }
         void fetchData();
@@ -43,7 +42,7 @@ const SyntaxPage = () => {
 
     return (
         <Container className="mt-3">
-            <h1>Синтаксическая разметка</h1>
+            <h1>Синтаксистік таңбалау</h1>
             <Sentences sentences={currentSentence} type="syntax"/>
             <PaginationComponent
                 sentencesPerPage={sentencesPerPage}
