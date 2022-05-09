@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_URL = `http://86.107.198.41:5091/`;
+export const API_URL = `https://86.107.198.41:5091/`;
 //export const API_URL = `https://aqueous-fjord-78834.herokuapp.com/api`;
 
 const $api = axios.create({
