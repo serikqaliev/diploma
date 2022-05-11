@@ -1,0 +1,15 @@
+.thStyle {
+    position: sticky;
+    backgroundColor: white !important;
+    width: 100px;
+    minWidth: 100px;
+    maxWidth: 100px;
+    left: 0px;
+}
+
+.wrapperStyle {
+    position: relative;
+    overflow: auto;
+    border: 1px solid black;
+    whiteSpace: nowrap;
+}
