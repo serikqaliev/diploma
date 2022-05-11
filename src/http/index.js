@@ -1,7 +1,6 @@
 import axios from "axios";
 
-export const API_URL = process.env('REACT_APP_API_URL');
-//export const API_URL = `https://aqueous-fjord-78834.herokuapp.com/api`;
+export const API_URL = "http://localhost:5091/api";
 
 const $api = axios.create({
     withCredentials: true,

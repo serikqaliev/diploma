@@ -7,6 +7,7 @@ import SemanticService from "../../services/SemanticService";
 import SemanticFunctions from "./SemanticFunctions";
 import TableComponent from "../Semantic/SemanticTable";
 import {tokenize} from "string-punctuation-tokenizer";
+import sty from "./SemanticTable.module.css";
 
 const textOptions = (text) => {
     return {text, includeWords: true, includeNumbers: true, includePunctuation: true};
@@ -26,6 +27,7 @@ const SemanticCard = () => {
         setSemanticTags((prev) => {
             const newMatrix = [...prev];
             newMatrix[index] = value;
+            console.log(value);
             return newMatrix;
         });
         setColors((prev) => {
@@ -51,6 +53,7 @@ const SemanticCard = () => {
     }, [id]);
 
     const sendHandler = async () => {
+        console.log(semanticTags);
         try {
             console.log("send handler id: " + id);
             await SemanticService.postMarkedSemantic(words, semanticTags, id);
@@ -62,7 +65,7 @@ const SemanticCard = () => {
 
     return (
         <Container className="mt-3 text-center">
-            <Card>
+            <Card className={sty.card}>
                 <Card.Header as="h5">{sentence}</Card.Header>
                 <Card.Body>
                     <div className="container col-12" style={{ paddingBottom: "30px" }}>

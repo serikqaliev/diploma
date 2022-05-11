@@ -15,7 +15,7 @@ export default class SyntaxFunctions {
                 currentColor = "white";
                 break;
             case 1:
-                currentColor = "blue";
+                currentColor = "aqua";
                 break;
             case 2:
                 currentColor = "yellow";
@@ -27,7 +27,7 @@ export default class SyntaxFunctions {
                 currentColor = "red";
                 break;
             case 5:
-                currentColor = "green";
+                currentColor = "lightgreen";
                 break;
             default:
                 break;

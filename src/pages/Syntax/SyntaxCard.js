@@ -6,6 +6,7 @@ import Card from "react-bootstrap/Card";
 import SyntaxService from "../../services/SyntaxService";
 import SyntaxFunctions from "./SyntaxFunctions";
 import TableComponent from "./SyntaxTable";
+import sty from "./SyntaxCard.module.css";
 
 const SyntaxCard = () => {
     const history = useNavigate();
@@ -57,7 +58,7 @@ const SyntaxCard = () => {
 
     return (
         <Container className="mt-3 text-center">
-            <Card>
+            <Card className={sty.card}>
                 <Card.Header as="h5">{sentence}</Card.Header>
                 <Card.Body>
                     <div className="container col-12" style={{ paddingBottom: "30px" }}>

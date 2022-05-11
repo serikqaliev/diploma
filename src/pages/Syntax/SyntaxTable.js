@@ -8,8 +8,8 @@ const TableComponent = (props) => {
     const options = props.options;
 
     return (
-        <div className={sty.wrapperStyle}>s
-            <Table striped bordered hover size="sm" responsive="sm"
+        <div style={{overflowX: "scroll"}} className={sty.table}>
+            <Table striped bordered size="sm" responsive="sm"
                    style={{width: "auto", marginLeft: "auto", marginRight: "auto"}}>
 
                 <thead>
@@ -39,14 +39,13 @@ const TableComponent = (props) => {
                             }}>{word}</th>
                             {words.map((word, colIndex) => {
                                 return (
-                                    <td key={`${word}td`}
-                                        style={colors.length !== 0 ? {backgroundColor: colors[rowIndex][colIndex]} : {backgroundColor: "white"}}>
+                                    <td key={`${word}td`}>
                                         <select
                                             defaultValue={"-"}
                                             onChange={(event) =>
                                                 props.onChange(rowIndex, colIndex, event)
                                             }
-                                            style={colors.length !== 0 ? {backgroundColor: colors[rowIndex][colIndex]} : {backgroundColor: "white"}}
+                                            style={colors.length !== 0 ? {backgroundColor: colors[rowIndex][colIndex]} : {backgroundColor: "transparent"}}
                                         >
                                             {options.map((element) => {
                                                 return (

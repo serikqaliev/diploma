@@ -18,7 +18,8 @@ export const useRoutes = () => {
             <Routes>
                 <Route path="/" element={<NotActivated email={authStore.user.email}/>}/>
                 <Route path="*" element={<Navigate to="/"/>}/>
-            </Routes>)
+            </Routes>
+        );
     }
 
     if (authStore.isAuth && authStore.user.isActivated) {
