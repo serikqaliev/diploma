@@ -16,7 +16,7 @@ const TableComponent = (props) => {
                 <tr>
                     <td></td>
                     {words.map((word) => (
-                        <th key={word} style={{
+                        <th style={{
                             transform: "rotate(180deg)",
                             writingMode: "vertical-lr",
                             width: "30px",
@@ -31,7 +31,7 @@ const TableComponent = (props) => {
                 <tbody>
                 {words.map((word, rowIndex) => {
                     return (
-                        <tr key={`${word}tr`} style={{textAlign: "end"}}>
+                        <tr style={{textAlign: "end"}}>
                             <th className={sty.thStyle} ref={(node) => {
                                 if (node) {
                                     node.style.setProperty('background-color', 'white', 'important');
@@ -39,7 +39,7 @@ const TableComponent = (props) => {
                             }}>{word}</th>
                             {words.map((word, colIndex) => {
                                 return (
-                                    <td key={`${word}td`}>
+                                    <td>
                                         <select
                                             defaultValue={"-"}
                                             onChange={(event) =>

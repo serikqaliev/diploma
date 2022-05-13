@@ -1,27 +1,20 @@
 export default class SemanticFunctions {
     options = [
         {type: "По умолчанию", value: "O"},
-        {type: "Cубъект", value: "SUB"},
-        {type: "Предмет", value: "PRE"},
-        {type: "Понятие(Общее)", value: "COG"},
-        {type: "Понятие(Научное)", value: "COS"},
-        {type: "Процесс", value: "PRO"},
-        {type: "Деятель", value: "DOE"},
-        {type: "Объект", value: "OBJ"},
-        {type: "Получатель", value: "REC"},
-        {type: "Адресат", value: "DES"},
-        {type: "Место", value: "LOC"},
-        {type: "Средство", value: "MEA"},
-        {type: "Инструмент", value: "INR"},
-        {type: "Состав", value: "COM"},
-        {type: "Определитель", value: "DET"},
-        {type: "Время", value: "TIM"},
-        {type: "Способ", value: "MET"},
-        {type: "Условие", value: "CON"},
-        {type: "Причина", value: "CAU"},
-        {type: "Цель", value: "TAR"},
-        {type: "Вставка", value: "INS"},
+        {type: "Агенс —инициатор события;", value: "AGN"},
+        {type: "Контрагент — сила или сопротивляющаяся среда, против которой осуществлется действие;", value: "CoAGN"},
+        {type: "Объект — участник, который передвигается или изменяется в ходе события;", value: "OBJ"},
+        {type: "Результат — участник, который появляется в результате события;", value: "RESU"},
+        {type: "Инструмент — стимул эмоции или участник, оказывающий непосредственное физическое воздействие;", value: "INST"},
+        {type: "Источник — место, из которого осуществляется движение;", value: "LOCA"},
+        {type: "Цель — место, в которое осуществляется движение;", value: "DIRE"},
+        {type: "Экспериенцер —участник, на которого событие производит определенный эффект.", value: "EXPE"},
+        {type: "Время", value: "TIME"},
+        {type: "Условие", value: "COND"},
+        {type: "Причина", value: "CAUS"},
         {type: "Предикат", value: "PRED"},
+        {type: "Получатель, адресат Recipient", value: "REC"},
+        {type: "Деятель (жансыз заттар) Doer", value: "DOE"}
     ];
 
     changeColors(value) {
@@ -30,68 +23,47 @@ export default class SemanticFunctions {
             case "O":
                 currentColor = "white";
                 break;
-            case "SUB":
+            case "AGN":
                 currentColor = "fuchsia";
                 break;
-            case "PRE":
+            case "CoAGN":
                 currentColor = "purple";
                 break;
-            case "COG":
+            case "OBJ":
                 currentColor = "red";
                 break;
-            case "COS":
+            case "RESU":
                 currentColor = "maroon";
                 break;
-            case "PRO":
+            case "INST":
                 currentColor = "yellow";
                 break;
-            case "DOE":
+            case "LOCA":
                 currentColor = "olive";
                 break;
-            case "OBJ":
+            case "DIRE":
                 currentColor = "lime";
                 break;
-            case "REC":
+            case "EXPE":
                 currentColor = "green";
                 break;
-            case "DES":
+            case "TIME":
                 currentColor = "aqua";
                 break;
-            case "LOC":
+            case "COND":
                 currentColor = "teal";
                 break;
-            case "MEA":
+            case "CAUS":
                 currentColor = "blue";
                 break;
-            case "INR":
+            case "PRED":
                 currentColor = "navy";
                 break;
-            case "COM":
+            case "REC":
                 currentColor = "salmon";
                 break;
-            case "DET":
+            case "DOE":
                 currentColor = "goldenrod";
-                break;
-            case "TIM":
-                currentColor = "tomato";
-                break;
-            case "MET":
-                currentColor = "greenyellow";
-                break;
-            case "CON":
-                currentColor = "mediumaquamarine";
-                break;
-            case "CAU":
-                currentColor = "mediumslateblue";
-                break;
-            case "TAR":
-                currentColor = "violet";
-                break;
-            case "INS":
-                currentColor = "deeppink";
-                break;
-            case "PRED":
-                currentColor = "mediumspringgreen";
                 break;
             default:
                 break;

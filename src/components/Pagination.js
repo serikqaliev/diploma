@@ -21,7 +21,7 @@ const PaginationComponent = ({sentencesPerPage, totalPages, currentPage, paginat
 
     return (
         <Container className="mt-3">
-            <Pagination>{pageCount}</Pagination>
+            <Pagination style={{overflow: "scroll"}}>{pageCount}</Pagination>
         </Container>
     );
 };
