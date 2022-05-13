@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_URL = "https://api.text-marking.kz/api";
+export const API_URL = "http://86.107.198.41/api";
 
 const $api = axios.create({
     withCredentials: true,
