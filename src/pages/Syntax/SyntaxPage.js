@@ -8,7 +8,7 @@ import SpinnerLoading from "../../components/SpinnerLoading";
 const SyntaxPage = () => {
     const [sentences, setSentences] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [sentencesPerPage] = useState(5);
+    const [sentencesPerPage] = useState(20);
     const [loaded, setLoaded] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 

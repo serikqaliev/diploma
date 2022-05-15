@@ -1,11 +1,11 @@
 export default class SyntaxFunctions {
     options = [
-        { type: "–", value: 0 },
-        { type: "ҚИ", value: 1 },
-        { type: "МА", value: 2 },
-        { type: "МЕ", value: 3 },
-        { type: "ҚА", value: 4 },
-        { type: "ЖА", value: 5 },
+        { type: "–", value: 0, description: 'Әдепкі' },
+        { type: "ҚИ", value: 1, description: 'Қиысу'  },
+        { type: "МА", value: 2, description: 'Матасу'  },
+        { type: "МЕ", value: 3, description: 'Меңгеру'  },
+        { type: "ҚА", value: 4, description: 'Қабысу'  },
+        { type: "ЖА", value: 5, description: 'Жанасу'  },
     ];
 
     changeColors(value) {

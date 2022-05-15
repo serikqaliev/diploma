@@ -1,20 +1,20 @@
 export default class SemanticFunctions {
     options = [
-        {type: "По умолчанию", value: "O"},
-        {type: "Агенс —инициатор события;", value: "AGN"},
-        {type: "Контрагент — сила или сопротивляющаяся среда, против которой осуществлется действие;", value: "CoAGN"},
-        {type: "Объект — участник, который передвигается или изменяется в ходе события;", value: "OBJ"},
-        {type: "Результат — участник, который появляется в результате события;", value: "RESU"},
-        {type: "Инструмент — стимул эмоции или участник, оказывающий непосредственное физическое воздействие;", value: "INST"},
-        {type: "Источник — место, из которого осуществляется движение;", value: "LOCA"},
-        {type: "Цель — место, в которое осуществляется движение;", value: "DIRE"},
-        {type: "Экспериенцер —участник, на которого событие производит определенный эффект.", value: "EXPE"},
-        {type: "Время", value: "TIME"},
-        {type: "Условие", value: "COND"},
-        {type: "Причина", value: "CAUS"},
-        {type: "Предикат", value: "PRED"},
-        {type: "Получатель, адресат Recipient", value: "REC"},
-        {type: "Деятель (жансыз заттар) Doer", value: "DOE"}
+        {type: "Әдепкі", description: "Әдепкі", value: "O"},
+        {type: "Position", description: "Іс-әрекетке қарсы жүзеге асырылатын күш немесе қарсылық ортасы;", value: "POS"},
+        {type: "Agent", description: "Іс-әрекетті жүзеге асыратын немесе жағдайды бақылауды жүзеге асыратын жағдайдың белсенді қатысушысы;", value: "AGN"},
+        {type: "Object", description: "Іс -әрекеттің объектісі жанды-жансыз заттар болады. Кейде жанды заттар және олардың белгілерін білдіретін сөздермен тіркесіп келеді;", value: "OBJ"},
+        {type: "Doer", description: "Белсенді жансыз оқиғаның бастамашысы-табиғи немесе стихиялық құбылыс немесе зат, олардың белгілерімен бірге;", value: "DOE"},
+        {type: "LOCA", description: "Дереккөз – қозғалыс жүзеге асырылатын орын;", value: "LOCA"},
+        {type: "asasd", description: "Қимылдың орындау мақсаттарын білдіреді;", value: "DIRE"},
+        {type: "asasd", description: "Ақпаратты қабылдаушы, іс әрекеттің нәтижесін көруші;", value: "REC"},
+        {type: "asasd", description: "Сезім мен ой, естеліктерді тасымалдаушысы;", value: "EXPE"},
+        {type: "asasd", description: "Қимылдың, іс-әрекеттің болу-болмау, іске асу-аспау мүмкіндігінің шартын білдіреді;", value: "COND"},
+        {type: "asasd", description: "Етістікпен айтылған сөйлемнің оқиғасын жүзеге асыру себептері. Қимылдың, іс-әрекеттің болу себебін немесе салдарын (нәтижесін) білдіреді;", value: "CAUS"},
+        {type: "asasd", description: "Сөйлемдегі іс-әрекетті жүзеге асыру ,  орындау құралы немесе іске асыру жолы;", value: "INST"},
+        {type: "asasd", description: "Іс -әрекеттің әсерінен, оқыйғадан, белгілі бір жағдайдан пайда болатын нәтиже;", value: "RESU"},
+        {type: "asasd", description: "Сөйлемде оқиғаның жүзеге асу уақытын білдіреді;", value: "TIME"},
+        {type: "asasd", description: "Предикат", value: "PRED"}
     ];
 
     changeColors(value) {
@@ -23,46 +23,46 @@ export default class SemanticFunctions {
             case "O":
                 currentColor = "white";
                 break;
-            case "AGN":
+            case "POS":
                 currentColor = "fuchsia";
                 break;
-            case "CoAGN":
-                currentColor = "purple";
+            case "AGN":
+                currentColor = "#00cc99";
                 break;
             case "OBJ":
                 currentColor = "red";
                 break;
-            case "RESU":
-                currentColor = "maroon";
-                break;
-            case "INST":
-                currentColor = "yellow";
+            case "DOE":
+                currentColor = "#ff7733";
                 break;
             case "LOCA":
-                currentColor = "olive";
+                currentColor = "yellow";
                 break;
             case "DIRE":
+                currentColor = "olive";
+                break;
+            case "REC":
                 currentColor = "lime";
                 break;
             case "EXPE":
                 currentColor = "green";
                 break;
-            case "TIME":
+            case "COND":
                 currentColor = "aqua";
                 break;
-            case "COND":
+            case "CAUS":
                 currentColor = "teal";
                 break;
-            case "CAUS":
-                currentColor = "blue";
+            case "INST":
+                currentColor = "#0066ff";
                 break;
-            case "PRED":
-                currentColor = "navy";
+            case "RESU":
+                currentColor = "#ff6699";
                 break;
-            case "REC":
+            case "TIME":
                 currentColor = "salmon";
                 break;
-            case "DOE":
+            case "PRED":
                 currentColor = "goldenrod";
                 break;
             default:
